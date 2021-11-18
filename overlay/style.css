@@ -1,0 +1,28 @@
+*{
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    color: #fff;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+div{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.one {
+background: url(img/ram.jpg) center/cover no-repeat fixed;
+}
+
+.two {
+    background: url(img/rhino.jpg) center/cover no-repeat fixed;
+}
+
+.three {
+    background: url(img/camel.jpg) center/cover no-repeat fixed;
+}
