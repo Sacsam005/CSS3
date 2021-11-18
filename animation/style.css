@@ -1,0 +1,188 @@
+html {
+    width: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+div{
+    height: 150px;
+    width: 150px;
+    margin-top: 25px; 
+    padding-top: 10px;  
+    display: inline-block; 
+    justify-content: center;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+
+div:hover {
+    transform: skewX(25deg);
+}
+
+/* Animation-1 */
+.one, .two, .three {
+    background-color: blue;
+    animation: move 3s 5;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(2, 0.5);
+        background-color: blanchedalmond;
+    }
+
+    50% {
+        transform: translateX(50px);
+        background-color: tomato;
+    }
+
+    100% {
+        transform: skewY(25deg);
+        background-color: #fefefe;
+    }
+}
+/* end of animation */
+
+/* transform: translateX translateY */
+/* customize the degree values */
+
+div:hover {
+    color: coral;
+}
+
+.one:hover {
+    background-color: aqua;
+    border-radius: 25%;
+}
+
+.three:hover {
+    background-color: #afafaf;
+    border-radius: 50%;
+}
+
+.one {
+    background-color: red;
+    font-size: 2rem;
+    transform: translateY(20px);
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+}
+
+.two {
+    background-color: blue;
+    transform: translateY(-60px);
+    transform: transition;
+    transition-property: background-color 3s;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.three {
+    background-color: green;
+    transform: translateY(20px);
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+
+
+/* transform: scaleX() scaleY() */
+#one {
+    margin-top: 30px;
+    background-color: red;
+    transform: skewX(25deg);
+}
+
+#two {
+    margin-top: 30px;
+    background-color: blue;
+    transform: skewX(25deg);
+  
+}
+
+#three {
+    margin-top: 30px;
+    background-color: green;
+    transform: skewX(25deg);
+}
+
+#four {
+    margin-top: 30px;
+    background-color: red;
+    transform: skewY(25deg);
+}
+
+#five {
+    margin-top: 30px;
+    background-color: blue;
+    transform: skewY(25deg);
+  
+}
+
+#six {
+    margin-top: 30px;
+    background-color: green;
+    transform: skewY(25deg);
+}
+
+/* Animation-2 */
+
+#one, #two, #three {
+    animation: flip 3s 5;
+    animation-fill-mode: backwards;
+}
+
+@keyframes flip {
+    0% {
+        transform: translateY(50px);
+        background-color: chartreuse;
+    }
+
+     25% {
+        transform: translateX(50px);
+        background-color: cadetblue;
+    }
+
+     50% {
+        transform: rotate(25deg) ;
+    }
+
+     100% {
+        transform: rotate(50deg);
+    }
+}
+
+/* end of animation */
+
+/* Animation-3 */
+
+#four, #five, #six {
+    animation: dance 3s 5;
+    animation-fill-mode: backwards;
+}
+
+@keyframes dance {
+    0% {
+        transform: scale(1, 0.3);
+        background-color: rgb(136, 15, 184);
+    }
+
+     25% {
+        transform: scale(0.1, 0.3);;
+        background-color: rgb(5, 29, 31);
+    }
+
+     50% {
+        transform: translateX(20px) ;
+    }
+
+     100% {
+        transform: translateY(50px);
+    }
+}
+
+/* end of animation */
